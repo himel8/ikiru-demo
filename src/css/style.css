@@ -15,6 +15,7 @@ select,
 textarea {
   width: 100%;
   outline: none;
+  background: #f8f8f8;
 }
 
 body {
@@ -84,6 +85,48 @@ button {
 #signature-pad {
   display: block;
   position: relative;
+}
+
+.fixed_text_clr {
+  color: #2b2829 !important;
+  background-color: #ffff !important;
+}
+
+#accordion-collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+}
+
+a.active-link {
+  position: relative;
+}
+.active-link::before {
+  position: absolute !important;
+  content: "";
+  left: -35px;
+  height: 45px;
+  border-radius: 0px 50px 50px 0px;
+  width: 7px;
+  background: #438e4d;
+}
+
+[data-accordion-target][aria-expanded="true"] svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  background-color: #438e4d;
+  color: #ffff;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+[data-accordion-target][aria-expanded="false"] svg {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
 }
 
 @media (min-width: 640px) {

@@ -32,7 +32,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   </head>
-  <body>
+  <body class="">
     <nav
       class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 h-[80px]"
     >
@@ -275,8 +275,8 @@
         <ul class="flex flex-col gap-12 font-medium pt-4">
           <li>
             <a
-              href="#"
-              class="flex items-center text-sm text-white hover:text-[#66C673] group"
+              href="/index.html"
+              class="active-link flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
                 class="w-[20px] h-[20px] text-white group-hover:text-[#66C673] transition-colors duration-300"
@@ -293,7 +293,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/onboarding.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -314,7 +314,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/company.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -350,7 +350,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/maintance.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -368,7 +368,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/workers.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -392,7 +392,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/customize.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -425,7 +425,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/privileges.html"
               class="flex items-center text-sm text-white hover:text-[#66C673] group"
             >
               <svg
@@ -456,7 +456,7 @@
     </aside>
 
     <!-- main body -->
-    <section class="p-4 sm:ml-64 mb-10 sm:mb-20 mt-20">
+    <section class="p-4 sm:ml-64 mb-10 mt-20">
       <div class="flex justify-between items-center gap-4">
         <p class="text-sm font-medium text-[#9F9C9C]">
           Good morning <span class="text-[#438E4D]"> Jonathan Trott,</span>
@@ -470,12 +470,783 @@
 
       <!-- title -->
       <div class="flex flex-col justify-center items-center gap-1 pt-8 pb-5">
-        <h2 class="text-[#2B2829] text-[32px] font-semibold font_primary">
+        <h2
+          class="text-[#2B2829] text-[32px] font-semibold font_primary text-center"
+        >
           AD 2 Employer References
         </h2>
         <p class="text-sm text-[#898384] font-medium">
           Please Enter Your Contact Information
         </p>
+      </div>
+
+      <!-- accordion start -->
+
+      <div id="accordion-collapse" data-accordion="collapse">
+        <div class="bg_shadow rounded-md p-4 lg:p-16 bg-white">
+          <h2 id="accordion-collapse-heading-1 ">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full font-semibold rtl:text-right fixed_text_clr text-lg"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>Referee 1: Employer</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden pt-10"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <!-- Personal Information -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Personal Information
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="source"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Please Select</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="firstName"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >First Name</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="firstName"
+                    type="text"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="surname"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Surname</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="surname"
+                    type="text"
+                    placeholder="Enter your last surname"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="rlt"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Relationship</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="rlt"
+                    type="text"
+                    placeholder="Enter your relationship"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="company"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Company</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="company"
+                    type="text"
+                    placeholder="Enter your company"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="jobtitle"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Job TItle</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="jobtitle"
+                    type="text"
+                    placeholder="Enter your job title"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Address Details -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Address Details
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="postcode"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Enter your postcode</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="address1"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 1</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address1"
+                    type="text"
+                    placeholder="Enter your address 1"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="address2"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 2</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address2"
+                    type="text"
+                    placeholder="Enter your address 2"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="address3"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 3</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address3"
+                    type="text"
+                    placeholder="Enter your address 3"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="postal"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Postal</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="postal"
+                    type="text"
+                    placeholder="Enter your postal"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="town"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Town</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="town"
+                    type="text"
+                    placeholder="Enter your town"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="county"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >County</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="county"
+                    type="text"
+                    placeholder="Enter your county"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Others Information -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Others Information
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="postcode"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Enter your postcode</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="mobile"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Mobile</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="mobile"
+                    type="text"
+                    placeholder="Enter your mobile"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="lndline"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Landline</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="landline"
+                    type="text"
+                    placeholder="Enter your landline"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Email</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                  <label
+                    for="message"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Message</label
+                  >
+                  <textarea
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="message"
+                    rows="6"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg_shadow rounded-md p-4 lg:p-16 bg-white">
+          <h2 id="accordion-collapse-heading-2 ">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full font-semibold rtl:text-right fixed_text_clr text-lg"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>Referee 2: Employer</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden pt-10"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <!-- Personal Information -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Personal Information
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="source"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Please Select</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="firstName"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >First Name</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="firstName"
+                    type="text"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="surname"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Surname</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="surname"
+                    type="text"
+                    placeholder="Enter your last surname"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="rlt"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Relationship</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="rlt"
+                    type="text"
+                    placeholder="Enter your relationship"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="company"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Company</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="company"
+                    type="text"
+                    placeholder="Enter your company"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="jobtitle"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Job TItle</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="jobtitle"
+                    type="text"
+                    placeholder="Enter your job title"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Address Details -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Address Details
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="postcode"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Enter your postcode</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="address1"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 1</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address1"
+                    type="text"
+                    placeholder="Enter your address 1"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="address2"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 2</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address2"
+                    type="text"
+                    placeholder="Enter your address 2"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="address3"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Address Line 3</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="address3"
+                    type="text"
+                    placeholder="Enter your address 3"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="postal"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Postal</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="postal"
+                    type="text"
+                    placeholder="Enter your postal"
+                  />
+                </div>
+
+                <div class="">
+                  <label
+                    for="town"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Town</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="town"
+                    type="text"
+                    placeholder="Enter your town"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="county"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >County</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="county"
+                    type="text"
+                    placeholder="Enter your county"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Others Information -->
+            <div>
+              <h6 class="text-base font-medium text-[#488F50]">
+                Others Information
+              </h6>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-8"
+              >
+                <div class="relative col-span-1 sm:col-span-2 lg:col-span-3">
+                  <select
+                    id="postcode"
+                    class="selectbox border w-full py-4 px-5 text-sm text-[#898384] license_box appearance-none"
+                  >
+                    <option selected>Enter your postcode</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center pr-3 pointer-events-none"
+                  >
+                    <svg
+                      id="dropdownIcon"
+                      class="w-5 h-5 text-gray-500 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label
+                    for="mobile"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Mobile</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="mobile"
+                    type="text"
+                    placeholder="Enter your mobile"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="lndline"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Landline</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="landline"
+                    type="text"
+                    placeholder="Enter your landline"
+                  />
+                </div>
+                <div class="">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Email</label
+                  >
+                  <input
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                  <label
+                    for="message"
+                    class="block mb-2 text-sm font-medium text-[#5A5555]"
+                    >Message</label
+                  >
+                  <textarea
+                    class="border w-full py-4 px-5 text-sm text-[#898384] license_box"
+                    id="message"
+                    rows="6"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="flex items-center justify-between gap-8 lg:gap-5 flex-col lg:flex-row pt-12"
+      >
+        <div class="flex items-center me-4">
+          <input
+            id="copy"
+            type="checkbox"
+            value=""
+            class="w-4 h-4 focus:ring-0 text-[#438e4d] border-gray-400 rounded"
+          />
+          <label for="copy" class="ms-2 text-sm text-[#898384]"
+            >You can download a PDF copy</label
+          >
+        </div>
+        <div class="flex justify-end items-center gap-5">
+          <button
+            class="text-[#5A5555] font-medium text-[12px] border border-[#cbcbcb] rounded-md py-2 px-4 w-[90px] bg-[#cbcbcb]"
+          >
+            Reset
+          </button>
+          <button
+            class="text-[#438e4d] font-medium text-[12px] border border-[#438e4d] rounded-md py-2 px-4 w-[90px] hover:text-white hover:bg-[#438e4d]"
+          >
+            Save
+          </button>
+          <button
+            class="bg-[#438e4d] font-medium text-[12px] border border-[#438e4d] rounded-md py-2 px-4 w-[90px] text-white"
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </section>
 

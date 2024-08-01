@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="grid grid-cols-1 lg:grid-cols-5 w-full min-h-screen">
+      <section
+        class="col-span-1 lg:col-span-2 login_bg relative flex justify-start items-end lg:items-center py-28 lg:py-0 px-8 sm:px-28 h-[600px] sm:h-[750px] lg:h-auto overflow-x-hidden w-full"
+      >
+        <div class="absolute top-6 left-0 w-[115%]">
+          <img
+            src="./assets/handshake.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="flex flex-col gap-5 items-start pt-48">
+          <img src="./assets/logo-full-white.png" alt="" />
+          <p class="text-[#FAFAFA] text-sm">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has industry's...
+          </p>
+          <button
+            class="bg-[#438e4d] font-medium text-[12px] text-white rounded-full py-2 px-6"
+          >
+            Learn More
+          </button>
+        </div>
+      </section>
+      <section
+        class="col-span-1 lg:col-span-3 flex justify-center items-center"
+      >
+        <div
+          class="bg-white w-full mt-4 lg:mt-0 mb-10 lg:mb-0 mx-2 sm:mx-4 lg:mx-0 lg:w-[550px] lg:min-h-[550px] py-8 px-4 sm:px-8 rounded-[10px] bg_shadow"
+        >
+          <div class="flex justify-between items-center pb-8">
+            <h2 class="text-[#2a2829] text-5xl font-semibold font_primary">
+              Login
+            </h2>
+            <div><img src="./assets/logo.png" alt="" /></div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-3">
+              <p class="text-sm text-[#2a2829]">
+                Enter your phone number or email address
+              </p>
+              <input
+                class="focus:outline-none shadow appearance-none border rounded-[10px] w-full py-4 px-5 text-sm text-[#898384] border-[#438E4D]"
+                id="username"
+                type="text"
+                placeholder="Phone number or email address"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <p class="text-sm text-[#2a2829]">Enter the OTP here</p>
+              <div class="flex space-x-2 justify-between mb-4">
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  class="otp-input w-10 h-10 sm:w-14 sm:h-14 text-center border border-gray-300 rounded focus:outline-none"
+                />
+              </div>
+              <label class="inline-flex items-center">
+                <input type="checkbox" class="h-4 w-4 border border-gray-300" />
+                <span class="ml-2 text-sm text-[#898384]"
+                  >I am using a public shared device</span
+                >
+              </label>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pt-6">
+            <button
+              class="bg-[#438E4D] text-base text-white rounded-[10px] py-4"
+            >
+              Submit Now
+            </button>
+            <div class="grid grid-cols-6 gap-4">
+              <button
+                class="col-span-4 bg-[#D4FFD9] text-base text-[#438E4D] rounded-[10px] py-4 flex justify-center items-center gap-4"
+              >
+                <img src="./assets/google.png" alt="" />
+                <span>Sign in with Google</span>
+              </button>
+              <button
+                class="bg-[#e7eaef] text-base rounded-[10px] py-4 flex justify-center items-center gap-4"
+              >
+                <img src="./assets/Facebook.png" alt="" />
+              </button>
+              <button
+                class="bg-[#e7eaef] text-base rounded-[10px] py-4 flex justify-center items-center gap-4"
+              >
+                <img src="./assets/apple.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

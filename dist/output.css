@@ -3389,9 +3389,9 @@ a.active-link {
   position: absolute !important;
   content: "";
   left: -35px;
-  height: 45px;
+  height: 40px;
   border-radius: 0px 50px 50px 0px;
-  width: 7px;
+  width: 6px;
   background: #438e4d;
 }
 

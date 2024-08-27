@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="w-[80%] mx-auto flex justify-between items-center gap-10 py-20 lg:h-screen lg:flex-row flex-col-reverse"
+    >
+      <div class="w-full lg:w-[45%] lg:pr-20">
+        <div
+          class="flex flex-col gap-5 lg:justify-start lg:items-start justify-center items-center w-full sm:w-[500px] mx-auto"
+        >
+          <h2
+            class="text-[#272727] text-[40px] font-bold font_primary lg:text-left text-center leading-[1.1em]"
+          >
+            <span class="text-[#468c4e]">Opps!</span> You have found the lost
+            world
+          </h2>
+          <p class="text-sm text-[#7B7577] lg:text-left text-center">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button
+            class="bg-[#438e4d] font-normal text-base border border-[#438e4d] rounded-full py-4 px-12 text-white"
+          >
+            Go Home
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-[55%] flex justify-center items-center sm:p-20">
+        <img src="./assets/amico.png" alt="" class="w-full h-full" />
+      </div>
+    </main>
+  </body>
+</html>
